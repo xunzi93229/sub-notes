@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>布局</title>
+  <link rel="stylesheet" href="">
+  <style type="text/css">
+  body{
+    margin: 0px;
+  }
+  /* 这里想要的使左右的边距没有，如果默认的，会离油脸器的左右两边有一点边距*/
+    #container{
+      width: 100%;
+      height: 950px;
+      background-color: blue;
+    }
+    #heading{
+      width: 100%;
+      height: 10%;
+      background-color: aqua;
+    }
+    #content_menu{
+      width: 30%;
+      height: 80%;
+      background-color: red;
+      float: left;
+    }
+    #content_body{
+      width: 70%;
+      height: 80%;
+      background-color: black;
+      float: left;  
+      /*设置浮动值  防止出现了重叠*/
+    }
+    #footing{
+      width: 100%;
+      height: 10%;
+      background-color:  yellow;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center">div 布局</h1>
+  <div id="container">
+    <div id="heading">头部</div>
+    <div id="content_menu">内容菜单</div>
+    <div id="content_body">内容主体</div>
+    <div id="footing">底部</div>
+  </div>
+
+  <h1 align="center"> table布局</h1>
+  <table width="100%" height="950px" style="background-color: red">
+    <tr>
+      <td colspan="2" width="100%" height="10%" style="background-color: aqua">这是头部</td>
+      <!-- colspan 这是合并单元格的 ，因为 整体设计 是中间的部分·分为左右两边，相当于两个单元格，所以上面或者下面要设计的时候 要合并这些单元格 -->
+    </tr>
+    <tr>
+      <td width="30%" height="80%" style="background-color: blue">左菜单
+        <ul>
+          <li>IOS</li>
+          <li>Android</li>
+          <li>HTML5</li>
+        </ul> </td>
+      <td width="70%" height="80%" style="background-color: yellow">
+    </tr>
+    <tr>
+      <td width="100%" height="10%" colspan="2" style="background-color: aqua">这是底部</td>
+    </tr>
+  </table>
+
+</body>
+</html>

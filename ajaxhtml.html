@@ -1,0 +1,27 @@
+var ajaxRequest()
+{
+try{
+  ajaxRequest = new XMLHttpResquest();
+}catch(e){
+  try{
+    ajaxRequest=new ActiveXObect("Msxml2.XMLHTTP");
+  }catch(e){
+    try{
+      ajaxRequest= new ActiveXObect("Mocrosoft.XMLHTTP");
+    }catch(e){
+      alert("Your browser broker!");
+      return false;
+    }
+  }
+}
+}
+
+
+function validateUserId()
+{
+  ajaxFunction();
+  if (!target) target = document.getElementById("userid");
+  var url = "validate?id="+escape(target.value);
+  ajaxRequest.open("GET",url,true);
+  ajaxRequest.send(null);
+}

@@ -1,0 +1,45 @@
+body{
+  background-image: url("../image/image2.jpg");
+  /* 设置 图片是否可以·重复 no-repeat repeat-x repeat-y 默认的是repeat*/
+  background-repeat: no-repeat;
+  /*background-position: right top;*/
+  /*right表示的是 ：right和center 要想全部显示 就要设置成上面的这个样子*/
+
+  /*background-position: center top;*/
+
+  /*background-position: 100px 100px; */
+  /*上面是定点的具体的位置显示图片*/
+
+  /*background-position: 20% 20%;*/
+  /*这是将屏幕分成份，然后来显示*/
+
+  /*background-attachment: fixed;*/
+  /*设置这个就让图片进行上下的滚动了，意思是 这个图片始终显示出来*/
+
+  /*background-size: 200px 200px;*/
+  /*规定图片显示的尺寸*/
+
+}
+
+
+
+/* 这是给body设置背景图片
+body{
+  background-image: url('../image/image1.jpg');
+}*/
+
+/*这是给p标签设置背景图片
+p{
+  background-image: url('../image/image1.jpg');
+}*/
+
+/*body{
+  background-color: darkgray;
+}
+p{
+  对这个文本域的宽度进行设置
+  width: 200px;
+  对这个文本域的内边距进行设置
+  padding: 10px;
+  background-color: red;
+}*/
